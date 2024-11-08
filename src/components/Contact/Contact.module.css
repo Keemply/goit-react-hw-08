@@ -1,0 +1,9 @@
+.deleteButton {
+    display: inline;
+}
+
+.infoCont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

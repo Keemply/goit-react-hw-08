@@ -1,0 +1,15 @@
+.liItem {
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    gap: 30px;
+}
+
+.ulList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

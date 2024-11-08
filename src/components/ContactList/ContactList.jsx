@@ -1,9 +1,14 @@
 import Contact from "../Contact/Contact";
-function ContactList({ contacts }) {
+import css from "./ContactList.module.css";
+function ContactList({ contacts, deleteContact }) {
   return (
-    <ul>
+    <ul className={css.ulList}>
       {contacts.map((contact) => {
-        return <Contact contact={contact} />;
+        return (
+          <li key={contact.id} className={css.liItem}>
+            <Contact contact={contact} deleteContact={deleteContact} />
+          </li>
+        );
       })}
     </ul>
   );
