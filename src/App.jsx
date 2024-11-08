@@ -19,7 +19,6 @@ function App() {
       return [...prefContacts, contactObj];
     });
   }
-  console.log(contacts);
 
   useEffect(() => {
     localStorage.setItem(localStorageKey, JSON.stringify(contacts));
